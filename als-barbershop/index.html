@@ -211,7 +211,14 @@
       top: 0;
       bottom: 0;
       width: 10px;
-      background: #7a1020;
+      background: repeating-linear-gradient(
+        180deg,
+        var(--red) 0 14px,
+        #f7f3ea 14px 26px,
+        var(--blue-pole) 26px 40px,
+        #f7f3ea 40px 52px
+      );
+      opacity: 0.55;
     }
     .hero::before { left: 0; }
     .hero::after { right: 0; }
@@ -335,11 +342,11 @@
     }
     .menu-board::before {
       top: 0.55rem;
-      background: #1b2a4a;
+      background: #7a1020;
     }
     .menu-board::after {
       bottom: 0.55rem;
-      background: #1b2a4a;
+      background: #7a1020;
     }
     .menu-list { list-style: none; }
     .menu-item {
